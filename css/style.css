@@ -1,0 +1,269 @@
+/* fonts adding here */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Hind+Siliguri:wght@600&family=Montserrat:wght@600&display=swap&family=Noto+Sans+KR:wght@400;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* common design starts here */
+.row {
+  width: 100%;
+}
+
+.row::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/*for mobile phone*/
+[class*="col-"] {
+  width: 100%;
+}
+
+/* common design ends here */
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* header design starts */
+header {
+  background: #F24A72;
+  text-align: center;
+}
+
+.logo {
+  height: 70px;
+  width: 70px;
+  color: white;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  text-align: center;
+  padding: 5px;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+nav ul li {
+  display: block;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px 20px;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+nav ul li a:hover {
+  background: #FF8C32;
+  border-radius: 5px;
+}
+
+nav ul li a:focus {
+  text-decoration: underline;
+}
+
+/* header design ends */
+
+
+/* banner design starts */
+.banner-section {
+  background-image: url('/img/banner-img.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banner-content {
+  padding: 50px 10px;
+  text-align: center;
+}
+.banner-section h1 {
+  width: 95%;
+  margin: 10px auto;
+  font-size: 2.5rem;
+  padding: 15px 20px;
+  background: rgba(250, 250, 0, 0.880);
+  border-radius: 5px;
+  font-family: 'Handlee', cursive;
+}
+.banner-section p {
+  font-size: 1.5rem;
+  width: 85%;
+  margin: 20px auto;
+  background: #00AFC1;
+  color: #fff;
+  padding: 10px;
+}
+.btn {
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1.4rem;
+  width: 170px;
+  text-transform: uppercase;
+  background: rgb(0, 128, 0);
+  color: white;
+  border: none;
+  transition: .4s;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+/* banner design ends */
+
+
+/* about-us-section design starts here */
+.about-section-contents {
+  padding: 1%;
+  text-align: center;
+}
+.about-section-contents h2 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+.about-section-contents p {
+  font-size: 0.8rem;
+  margin: 0 10px;
+  margin-bottom: 20px
+}
+/* about-us-section design ends here */
+
+
+/* food-menu section starts here */
+.food-section {
+  padding: 1%;
+  text-align: center;
+  padding: 0 15px;
+  padding-bottom: 20px;
+}
+.food-section h2 {
+  padding: 15px;
+}
+.card-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.card-desc {
+  background: #A97155;
+  color: #f4f4f4;
+  font-weight: bold;
+  padding-bottom: 10px
+}
+.card-desc h3 {
+  padding: 10px 20px;
+  background: #333;
+}
+.card-desc p {
+  margin: 10px 0;
+}
+.card {
+  transition: .4s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+/* food-menu section ends here */
+
+
+/* contact section design starts here */
+.contact-section {
+  padding: 1%;
+  background: #325288;
+}
+.maps {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+}
+.contact-details {
+  color: #f4f4f4;
+  text-align: center;
+  opacity: 0.8;
+}
+.contact-details h3 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+}
+.contact-details > div {
+  padding: 10px 20px;
+}
+.contact-details p,address {
+  font-size: 0.8rem;
+  padding: 5px 0;
+}
+/* contact section design ends here */
+
+
+/* footer-section design starts here */
+.footer-section {
+  padding: 1%;
+  background: #060930;
+  color: #fff;
+  text-align: center;
+}
+.footer-section .para {
+  font-size: 1rem;
+  padding: 10px 15px;
+  opacity: 0.8;
+}
+.icon-style {
+  width: 32px;
+  height: 32px;
+  padding-top: 7px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  color: #fff;
+  margin: 0 5px;
+  transition: .4s;
+  text-align: center;
+}
+.icon-style:hover {
+  transform: scale(1.2);
+  background: #fff;
+  color: dodgerblue;
+}
+.footer-credit p {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-align: center;
+  color: #333;
+  padding: 15px 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.footer-credit p span {
+  color: dodgerblue;
+    text-transform: uppercase;
+}
+.footer-credit p span:hover {
+  text-decoration: underline;
+  color: orange;
+}
+/* footer-section design ends here */
