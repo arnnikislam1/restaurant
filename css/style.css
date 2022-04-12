@@ -92,7 +92,7 @@ nav ul li a:focus {
 
 /* banner design starts */
 .banner-section {
-  background-image: url('../img/banner-img.jpg');
+  background-image: url('/img/banner-img.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
